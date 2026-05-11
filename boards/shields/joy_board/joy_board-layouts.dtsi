@@ -1,0 +1,73 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+                keys  //               w    h     x     y    rot   rx   ry
+            // Left half - column 0 (pinky outer)
+            = <&key_physical_attrs  100  100     0   175      0    0    0>  //  8
+            , <&key_physical_attrs  100  100     0   275      0    0    0>  // 19
+            , <&key_physical_attrs  100  100     0   375      0    0    0>  // 30
+            , <&key_physical_attrs  100  100     0   475      0    0    0>  // 41
+            // Left half - column 1
+            , <&key_physical_attrs  100  100   100   125      0    0    0>  //  2
+            , <&key_physical_attrs  100  100   100   225      0    0    0>  // 13
+            , <&key_physical_attrs  100  100   100   325      0    0    0>  // 24
+            , <&key_physical_attrs  100  100   100   425      0    0    0>  // 35
+            // Left half - column 2 (top row stagger)
+            , <&key_physical_attrs  100  100   200    75      0    0    0>  //  0
+            , <&key_physical_attrs  100  100   200   175      0    0    0>  //  9
+            , <&key_physical_attrs  100  100   200   275      0    0    0>  // 20
+            , <&key_physical_attrs  100  100   200   375      0    0    0>  // 31
+            // Left half - column 3
+            , <&key_physical_attrs  100  100   300   125      0    0    0>  //  3
+            , <&key_physical_attrs  100  100   300   225      0    0    0>  // 14
+            , <&key_physical_attrs  100  100   300   325      0    0    0>  // 25
+            , <&key_physical_attrs  100  100   300   425      0    0    0>  // 36
+            // Left half - column 4 (index)
+            , <&key_physical_attrs  100  100   400   150      0    0    0>  //  6
+            , <&key_physical_attrs  100  100   400   250      0    0    0>  // 17
+            , <&key_physical_attrs  100  100   400   350      0    0    0>  // 28
+            , <&key_physical_attrs  100  100   400   450      0    0    0>  // 39
+            // Right half - column 4 (index)
+            , <&key_physical_attrs  100  100  1000   150      0    0    0>  //  7
+            , <&key_physical_attrs  100  100  1000   250      0    0    0>  // 18
+            , <&key_physical_attrs  100  100  1000   350      0    0    0>  // 29
+            , <&key_physical_attrs  100  100  1000   450      0    0    0>  // 40
+            // Right half - column 5
+            , <&key_physical_attrs  100  100  1100   125      0    0    0>  //  4
+            , <&key_physical_attrs  100  100  1100   225      0    0    0>  // 15
+            , <&key_physical_attrs  100  100  1100   325      0    0    0>  // 26
+            , <&key_physical_attrs  100  100  1100   425      0    0    0>  // 37
+            // Right half - column 6
+            , <&key_physical_attrs  100  100  1200    75      0    0    0>  //  1
+            , <&key_physical_attrs  100  100  1200   175      0    0    0>  // 10
+            , <&key_physical_attrs  100  100  1200   275      0    0    0>  // 21
+            , <&key_physical_attrs  100  100  1200   375      0    0    0>  // 32
+            // Right half - column 7
+            , <&key_physical_attrs  100  100  1300   125      0    0    0>  //  5
+            , <&key_physical_attrs  100  100  1300   225      0    0    0>  // 16
+            , <&key_physical_attrs  100  100  1300   325      0    0    0>  // 27
+            , <&key_physical_attrs  100  100  1300   425      0    0    0>  // 38
+            // Right half - column 8 (pinky outer)
+            , <&key_physical_attrs  100  100  1400   175      0    0    0>  // 11
+            , <&key_physical_attrs  100  100  1400   275      0    0    0>  // 22
+            , <&key_physical_attrs  100  100  1400   375      0    0    0>  // 33
+            , <&key_physical_attrs  100  100  1400   475      0    0    0>  // 42
+            // Right half - column 9 (extra outer)
+            , <&key_physical_attrs  100  100  1500   175      0    0    0>  // 12
+            , <&key_physical_attrs  100  100  1500   275      0    0    0>  // 23
+            , <&key_physical_attrs  100  100  1500   375      0    0    0>  // 34
+            , <&key_physical_attrs  100  100  1500   475      0    0    0>  // 43
+            // Right - extra key (key 44)
+            , <&key_physical_attrs  100  100  1125   550      0    0    0>  // 44
+            // Right thumb cluster (all on right side)
+            , <&key_physical_attrs  100  100   445   885  (-2200)  0    0>  // 45
+            , <&key_physical_attrs  100  100   685   800  (-1500)  0    0>  // 46
+            , <&key_physical_attrs  100  100   710   915  (-1500)  0    0>  // 47
+            , <&key_physical_attrs  100  100   950   645   (-500)  0    0>  // 48
+            , <&key_physical_attrs  150  100  1000   760   (-500)  0    0>  // 49
+            ;
+    };
+};

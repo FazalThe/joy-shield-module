@@ -1,0 +1,17 @@
+if SHIELD_JOY_BOARD_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "Joy Board"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_JOY_BOARD_LEFT || SHIELD_MY_KEYBOARD_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

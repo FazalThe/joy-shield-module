@@ -1,3 +1,5 @@
+name: zmk-keyboard-joy_board
+
 build:
   settings:
     board_root: .
